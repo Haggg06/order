@@ -1,0 +1,24 @@
+      <html>  
+    <head>  
+    <title>dropdown menu list using select tab</title>  
+    </head>  
+    <script>  
+    function bestfood() {  
+    var mylist = document.getElementById("myList");  
+    document.getElementById("favourite").value = mylist.options[mylist.selectedIndex].text;  
+    }  
+    </script>  
+      
+    <body>  
+    <form>   
+    <select id = "myList" onchange = "bestfood()" >  
+    <option> ---CHOOSE--- </option>  
+    <option> burger </option>  
+    <option> injera </option>  
+    <option> doro wot </option>  
+    <option> firfir </option>  
+    </select>     
+    <input type = "CHOOSE" id = "favourite" size = "10" </p>  
+    </form>  
+    </body>  
+    </html>  
